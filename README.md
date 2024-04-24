@@ -27,7 +27,7 @@ This project is a web application that predicts the disease based on the symptom
 
 ```
 
-git clone https://github.com/your-repo/disease-prediction.git
+git clone https://github.com/laharisiri123/Disease-Healthcare-Provider-Recommendation.git
 
 ```
 
