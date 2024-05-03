@@ -4,13 +4,23 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Koh Santepheap", serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
   background-color: rgb(208, 227, 245);
 }
 
 ul,
 ol {
   list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
 }

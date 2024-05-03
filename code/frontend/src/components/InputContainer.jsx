@@ -32,11 +32,16 @@ const InputContainer = ({
   );
 
   return (
-    <div className="input__container">
+    <div className="input__container" id="disease-pred">
       <div className="inputs">
         <h1 className="title_heading">Disease Prediction</h1>
         <div>
-          <label className="input__label">Symptoms:</label>
+          <label className="input__label">
+            Symptoms:{" "}
+            <span className="symptom-suggestion">
+              (Please provide atleast 3 syptoms for better Prediction)
+            </span>
+          </label>
           <Select
             className="input__field"
             isMulti
@@ -62,9 +67,13 @@ const InputContainer = ({
             onChange={(selectedOptions) => setTimings(selectedOptions)}
           />
         </div>
-        <button onClick={handleSubmit} className="submit__btn">
-          Submit
-        </button>
+        <a
+          href="#predicted-results"
+          onClick={handleSubmit}
+          className="submit__btn"
+        >
+          SUBMIT
+        </a>
       </div>
     </div>
   );

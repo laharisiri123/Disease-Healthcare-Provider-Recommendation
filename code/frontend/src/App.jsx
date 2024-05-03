@@ -3,6 +3,7 @@ import axios from "axios";
 import InputContainer from "./components/InputContainer";
 import ResultContainer from "./components/ResultContainer";
 import "./App.css";
+import TitlePage from "./components/TitlePage";
 const App = () => {
   const [symptoms, setSymptoms] = useState([]);
   const [city, setCity] = useState([]);
@@ -50,6 +51,7 @@ const App = () => {
 
   return (
     <div>
+      <TitlePage />
       <InputContainer
         symptoms={symptoms}
         setSymptoms={setSymptoms}

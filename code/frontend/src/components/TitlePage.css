@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Headland+One&family=Koh+Santepheap:wght@100;300;400;700;900&display=swap");
+
+.title-page {
+  background-image: url("./../assets/TitlePageBg.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.title-name,
+.title-subtitle {
+  font-family: "Koh Santepheap", serif;
+  color: rgb(28, 5, 62);
+}
+
+.title-name {
+  /* margin-top: 20rem; */
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.title-subtitle {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 0 22rem;
+  font-weight: 600;
+  /* line-gap: 2rem; */
+}
+
+.start-link {
+  background-color: rgb(115, 134, 239);
+  color: white;
+  text-decoration: none;
+  border-radius: 3rem;
+  padding: 1rem 4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.wesite-description {
+  padding: 0 20rem;
+  font-size: 1.8rem;
+  text-align: center;
+  color: rgb(95, 95, 231);
+}

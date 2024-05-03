@@ -6,7 +6,7 @@ import "./ResultContainer.css";
 
 const ResultContainer = ({ results }) => {
   return (
-    <div className="result-container">
+    <div className="result-container" id="predicted-results">
       <h2 className="result-title">
         Predicted Diseases and Recommended Doctors
       </h2>

@@ -225,7 +225,7 @@ def test_input(input_symptoms):
         predicted.extend(predict_disease)
 
     disease_counts = Counter(predicted)
-    percentage_per_disease = {disease: (count / 6) * 100 for disease, count in disease_counts.items()}
+    percentage_per_disease = {disease: round((count / 6) * 100, 2) for disease, count in disease_counts.items()}  # Rounded to 2 decimal places
     result_df = pd.DataFrame({"Disease": list(percentage_per_disease.keys()),
                                "Chances": list(percentage_per_disease.values())})
     result_df = result_df.merge(doc_data, on='Disease', how='left')
